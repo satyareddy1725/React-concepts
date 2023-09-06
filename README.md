@@ -1,25 +1,37 @@
-<!-- 
-      Header
-        logo
-        nav items
-      BODY
-        search
-        RESTAURANTCONTAINER
-          restaurantcards
-      FOTTER
-        Copyright
-        links
-        Address 
-        Contact
+# how to import and export
+- export default componentName
+- export const componenetName   # named export 
+- import componentName form file direction
+- import {componentName } from file direction named import
 
-       -->
-- functions are used to reusability
-- # what is props
-- if your passing dynamically something into the props that is called props.
-- properties is something which u can pass to the componets
-- # props just normal arguments to a function
-- react takes a props  from the component and wrap it into  a object and passes to the functions .that props is objet.
-# what is CONFIG DRIVEN UI
-- our website is driven by configs
-- controlling your ui using data or using config that config comes from  backend 
-- ui is written once  from the api the uis changes from different locations 
+
+# React HOOKS
+- onClick passses the call back function
+-A HOOK is a normal js function which is given by react that hook comes with some super powers
+-written by facebook develeopers
+-useState, useEffect most important hooks
+-naming convention is const [name of the variable] = useState([]) . This is empty variable
+-const [name of the variable] = useState([null]) 
+- hooks keep the ui with data layer
+
+
+# state variable
+-in a state variable u cannot modify directly .
+-you modify only by a function.and that function is the secondparameter as the array
+
+
+
+# whenever you have hard coded data u never keep it in components file
+# never hard coded string into your components
+# you have to put utilities file
+
+
+
+
+# react uses the  Reconciliation algorithm (React fiber) in 2016
+-react creates virtual dom representation of actual dom
+-virtual dom is a object
+
+
+# diff algorithm
+
