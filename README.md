@@ -1,37 +1,68 @@
-# how to import and export
-- export default componentName
-- export const componenetName   # named export 
-- import componentName form file direction
-- import {componentName } from file direction named import
+# monolith 
+-devleoped api and ui and aunthentication and database and  notification sending smses  written in the same project.
+- we want to change in  project we have to compile whole project so thats all are shifting to micro servics
 
 
-# React HOOKS
-- onClick passses the call back function
--A HOOK is a normal js function which is given by react that hook comes with some super powers
--written by facebook develeopers
--useState, useEffect most important hooks
--naming convention is const [name of the variable] = useState([]) . This is empty variable
--const [name of the variable] = useState([null]) 
-- hooks keep the ui with data layer
+# microservices
+- we have diff services for diff jobs
+  - backend end
+  - ui
+  - aunth
+  -db
+  -sms
+  -email notifaications
+
+---- this is also separation of concerns, and sngle responsible principle---------
+
+# How do these services interact which each other 
+ - all these services talk each other
+ - U can write any languages for diff services 
+
+ - all serics are running on their own ports
+ - 1234 : ui
+ - 1000 : be
+ - 3000 : sms
+ - these ports can map to domain name 
+
+# how webapps fetch the data from the backend
+- 
+# first one
+- whenever page loads -- > we can make an api call  wait for the data ----then we render ui
+# second one 
+- whenever page loads --> render ---> now make an api call ---> render once again 
+
+<!-- in react follows the second approach -->
+2nd one gives the better approah
+-react renders our ui very fast.react render cycles are very fast
 
 
-# state variable
--in a state variable u cannot modify directly .
--you modify only by a function.and that function is the secondparameter as the array
+# useEffect Hook
+-it a normal react function .it tkes two arguments
+-first takes the call back function and second argument takes the dependency arrray
+
+-useeffect calls after component rnders 
+- as soon as render cylcle finiched then useeffect callback function called
+
+
+# fetch the data
+- fetch() function is given by broswers(js engine have)
+-
 
 
 
-# whenever you have hard coded data u never keep it in components file
-# never hard coded string into your components
-# you have to put utilities file
 
 
 
 
-# react uses the  Reconciliation algorithm (React fiber) in 2016
--react creates virtual dom representation of actual dom
--virtual dom is a object
 
 
-# diff algorithm
+
+
+
+
+
+
+
+
+
 
