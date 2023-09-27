@@ -1,52 +1,47 @@
-# monolith 
--devleoped api and ui and aunthentication and database and  notification sending smses  written in the same project.
-- we want to change in  project we have to compile whole project so thats all are shifting to micro servics
+-----------------------useEffect----------------
+
+# useEffect import by named import from react library
+  ---- useEffect is called using two arguments 
+            -- first arguments is callback function 
+            -- second argument is dependency array
+
+            ---useEffect(()=> {},[]);
+# when useEffect called is after every render of that component
+        -- dependency array can changes the behaviour of its render.dependency is also not mandetory.
+# if no dependency array then useEffect called on every rnder
+# if dependency array [] is empty then useEffect called only on  initial rnder and just one time only
+# if something in dependency array [] then useEffect called whenever that something changes 
+
+---------------------------------useState--------------------------------------
+
+# never use your usestate variables outside of your component
+# try code variables on the top of the functions
+# never use useState  in if and else condition and for loop
+
+--------------------------------------Routing------------------------------------------------
+------whenever we want to give routing first we create routing configuration
+# we have to import the createBrowserRouter from ' react-router-dom ''for helping the routing config rutaion.it creates the routingconfiguration
+
+what is configuration
+ ----some information that will define what will happen on a specific route or specific path
+ ----createBroswerRouter takes the list or array of path.path is a object 
+ ----after creating the paths we have to render this configuration .RouterProvider comes frm the  react-router-dom.RouterProvider is a component
+     RouterProvider provides the routing into uour app
+# RouterProvider is exported from react-router-dom library
+# errorElement component also 
+# u can use the useRoute Error also
+---------------------------------------------------different types of routng -----------------------------
+# there two types of routing in webapplications
+   --client side routing
+   --server side routing
+
+---------------------------------------------------------------
+----->React-router-dom gives the one hook that is called useParams
+            --> params is an object
 
 
-# microservices
-- we have diff services for diff jobs
-  - backend end
-  - ui
-  - aunth
-  -db
-  -sms
-  -email notifaications
-
----- this is also separation of concerns, and sngle responsible principle---------
-
-# How do these services interact which each other 
- - all these services talk each other
- - U can write any languages for diff services 
-
- - all serics are running on their own ports
- - 1234 : ui
- - 1000 : be
- - 3000 : sms
- - these ports can map to domain name 
-
-# how webapps fetch the data from the backend
-- 
-# first one
-- whenever page loads -- > we can make an api call  wait for the data ----then we render ui
-# second one 
-- whenever page loads --> render ---> now make an api call ---> render once again 
-
-<!-- in react follows the second approach -->
-2nd one gives the better approah
--react renders our ui very fast.react render cycles are very fast
 
 
-# useEffect Hook
--it a normal react function .it tkes two arguments
--first takes the call back function and second argument takes the dependency arrray
-
--useeffect calls after component rnders 
-- as soon as render cylcle finiched then useeffect callback function called
-
-
-# fetch the data
-- fetch() function is given by broswers(js engine have)
--
 
 
 
