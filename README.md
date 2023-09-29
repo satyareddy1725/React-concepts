@@ -1,20 +1,8 @@
-# functional based components and class based components
-----> end of the day function based component is a javascript class
-# class UseClass extends React.Component {}
-----> the extends will make react to know this is class based components 
+# Hooks are have some super power and these are some special javascript functions
+   ----> custom hooks  are abstract from features from components and maintain the both componet and hooks in a modualar.
+   ----> custom hooks are simply the code and bundles the logics in the component store inthe custom hooks 
+   ----> in the custom hooks we abstarct the logics of the component  
 
-----inside the cls.fun we have render method that gives the piece of jsx
-
-# React.Component is given by react and in the class user can inheritance some methods in to the component 
-
-------------------------------------------------------------------
-# props how to pass
-----> in the class based componets the props will pass through constructor and we use super(props) and we accesing the props by wriitng this.props.name
-
-# u can accesing your props where u want in the class cfunctions 
-------------------------------------------------------------
-# life cycle of the react class based components
- 1---> classLoads  or class instantiated then 
- --> constructor is initialized  or called then 
- ---> render is called
- ----> ComponentDidMount called
+---------what we coverd----------------------------------
+1.custom hooks 
+2.lazy loading
