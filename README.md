@@ -1,13 +1,14 @@
-1.recommended css is styled componnets , this is another way to write css
-2. important is component componnets 
-3. it works with react , angular , different other frame works , html also
-
----------tailwind css_______________
-npm install -D tailwindcss postcss
-npx tailwindcss init
-
-Post css a tool for trnsforming css with java script
-when ever we executed, it creates a tailwind configuration file 
---> your bundle use post css to read tailwing css
--->content: ["./src/**/*.{html,js,ts,jsx,tsx}"] this array takes the file names  in the files where u are using tailwind css
----> tailwind css give a classnames for every css that u want to write into your app
+# higher oreder Componnets 
+    --> higher order components is a  function that takes a component and enhances that component and returns a component back a new component
+    --> higher order componet is nothing but a it a javascript function
+    --> these higher order functions are pure functions means 
+# what is controlled and un controlled components 
+# lifting the state up
+    --> handle the data layer u r applications will be ready to super power to ur application
+# Uncontrolled Component
+    --> the component has a own state variable then its un controlled component
+# Controlled Component
+    --> the component has a does not own state variable it is uncontrolled component
+-------------------------> Props Drilling <-----------------------------------
+----> for the prop driling we have react Context 
+    > React Context is place a where we can put a global level content
