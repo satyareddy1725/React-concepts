@@ -9,7 +9,7 @@ const Body = () => {
   //  Local state variable - super powerfull variable
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurants] = useState([]);
-  console.log(listOfRestaurants);
+  // console.log(listOfRestaurants);
 
   const [searchText, setSearchText] = useState("");
 
@@ -25,7 +25,7 @@ const Body = () => {
     );
 
     const json = await data.json();
-    console.log(json?.data?.cards?.slice(3));
+    // console.log(json?.data?.cards?.slice(3));
     setListOfRestaurants(json?.data?.cards?.slice(3)); /* */
     setFilteredRestaurants(json?.data?.cards?.slice(3)); /* */
   };
